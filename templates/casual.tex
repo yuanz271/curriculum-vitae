@@ -63,33 +63,36 @@
 \subsection*{}
 %Department of Applied Mathematics and Statistics\\
 
+\begin{tabular}{cl@{\hspace{1em}}l}
 $for(address)$
+\faInbox
 $for(address.mailing)$
-$address.mailing$ \\
+  & & $address.mailing$ \\
 $endfor$
 $endfor$
+\\
 
 $for(phone)$
 $if(phone.home)$
-\faMobile\, $phone.home$
+\faMobile & & $phone.home$ \\
 $endif$
 $endfor$
 
 $for(email)$
 $if(email.home)$
-\faAt\, \href{mailto:$email.home$}{$email.home$}
+\faAt & & \href{mailto:$email.home$}{$email.home$} \\
 $endif$
 $endfor$
 
 $for(link)$
 $if(link.github)$
-\faGithub\, \href{$link.github$}{$link.github$} \\
+\faGithub & & \href{$link.github$}{$link.github$} \\
 $endif$
 $if(link.linkedin)$
-\faLinkedin\, \href{$link.linkedin$}{$link.linkedin$}
+\faLinkedin & & \href{$link.linkedin$}{$link.linkedin$}
 $endif$
 $endfor$
-
+\end{tabular}
 
 %\subsection*{\textsc{Areas of Interest}}
 %\begin{itemize}
