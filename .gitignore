@@ -217,9 +217,5 @@ TSWLatexianTemp*
 /auto/*
 
 # expex forward references with \gathertags
-*-tags.tex
-academic.tex
-academic.pdf
-cv.pdf
-cv.tex
-cv.xdv
+/*.tex
+/*.pdf
