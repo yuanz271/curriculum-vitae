@@ -1,0 +1,152 @@
+\documentclass[12pt, letterpaper]{scrartcl}
+\usepackage[letterpaper, margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage[backend=biber, style=authoryear, sorting=none, doi=false, isbn=false, url=false, dashed=false, maxbibnames=5]{biblatex}
+\DeclareNameAlias{sortname}{last-first}
+\addbibresource{resource/publication.bib}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\hypersetup
+{
+  pdfauthor={$name$},
+  pdfsubject={$name$'s CV},
+  pdftitle={$name$'s CV},
+  colorlinks, breaklinks, xetex, bookmarks,
+  filecolor=black,
+  urlcolor=black,
+  linkcolor=black,
+  citecolor=black
+}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+\addtokomafont{sectioning}{\rmfamily}
+\setlength\parindent{0pt}
+
+% and the actual content starts here
+\begin{document}
+
+{\noindent\LARGE\textbf{$name$}}\\
+\hrule
+
+%\subsection*{\textsc{Contact}}
+\subsection*{}
+%Department of Applied Mathematics and Statistics\\
+
+$for(address)$
+$for(address.mailing)$
+$address.mailing$ \\
+$endfor$
+$endfor$
+
+$for(phone)$
+$if(phone.home)$
+\faMobile\, $phone.home$
+$endif$
+$endfor$
+
+$for(email)$
+$if(email.home)$
+\faAt\, \href{mailto:$email.home$}{$email.home$}
+$endif$
+$endfor$
+
+$for(link)$
+$if(link.github)$
+\faGithub\, \href{$link.github$}{$link.github$} \\
+$endif$
+$if(link.linkedin)$
+\faLinkedin\, \href{$link.linkedin$}{$link.linkedin$}
+$endif$
+$endfor$
+
+
+%\subsection*{\textsc{Areas of Interest}}
+%\begin{itemize}
+%	\parskip=0.1em
+%	
+%	\item Machine Learning, Statistics, Computational Neuroscience
+%\end{itemize}
+
+
+\subsection*{\textsc{Education}}
+\begin{itemize}
+	\parskip=0.1em
+    
+    $for(education)$
+	\item 
+	\headerrow
+		{\textbf{$education.institute$}}
+		{\textbf{$education.city$}}
+	\\
+	\headerrow
+		{\emph{$education.degree$, $education.subject$}}
+		{\emph{$education.year$}}
+	$endfor$
+\end{itemize}
+
+
+\subsection*{\textsc{Experience}}
+\begin{itemize}
+	\parskip=0.1em
+	
+	$for(experience)$
+	\item
+	\headerrow
+	{\textbf{$experience.employer$}}
+	{\textbf{$experience.city$}}
+	\\
+	\headerrow
+	{\emph{$experience.position$}}
+	{\emph{$experience.years$}}
+	$endfor$
+\end{itemize}
+
+\subsection*{\textsc{Honors}}
+\begin{itemize}
+    \parskip=0.1em
+    
+    $for(honor)$
+    \item
+    \headerrow
+    {\textbf{$honor.title$}. $honor.party$}
+    {\emph{$honor.year$}}
+    $endfor$
+\end{itemize}
+
+\subsection*{\textsc{Publication}}
+\doublespacing
+\nocite{*}
+\printbibliography[heading=none]
+
+\end{document}

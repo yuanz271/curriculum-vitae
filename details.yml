@@ -1,0 +1,126 @@
+---
+# Personal details
+name: Yuan Zhao
+
+address:
+- work:
+  - "Department of Neurobiology and Behavior"
+  - "Stony Brook University"
+  - "Stony Brook, NY 11794"
+  home:
+  - "81 Cayuga Ave"
+  - "South Setauket, NY 11720"
+  mailing:
+  - "PO Box 490"
+  - "East Setauket, NY 11733"
+
+phone: 
+- home: +1 (631) 561 3689
+
+email: 
+- work: yuan.zhao@stonybrook.edu
+  home: yuanz271@gmail.com
+
+# Insert URLs without http://
+link:
+- github: github.com/yuanz271
+  linkedin: www.linkedin.com/in/yuanz271
+
+# Sections
+
+intro: "Who am I?"
+
+skills:
+- Sleeeeep
+
+experience:
+- years: 2017--\phantom{2017}
+  employer: The Research Foundation for The State University of New York
+  position: Postdoctoral Associate 
+  city: Stony Brook, NY
+- years: 2016--2017
+  employer: Stony Brook University
+  position: Postdoctoral Associate 
+  city: Stony Brook, NY
+- years: 2015--2016
+  employer: Stony Brook University
+  position: Graduate Assistant 
+  city: Stony Brook, NY
+# - years: 2014--2015
+#   employer: Angion Biomedica Corp
+#   position: Statistical Consultant 
+#   city: Uniondale, NY
+- years: 2012--2014
+  employer: Stony Brook University
+  position: Teaching Assistant 
+  city: Stony Brook, NY
+- years: 2007--2008
+  employer: Beihang University
+  position: Teaching Assistant 
+  city: Beijing, China
+
+education:
+- year: 2016
+  degree: Ph.D.
+  thesis: Log-linear Model Based Tree and Latent Variable Model for Count Data
+  subject: Applied Mathematics and Statistics
+  institute: Stony Brook University
+  city: Stony Brook, NY
+- year: 2012
+  degree: M.S.
+  subject: Statistics
+  institute: George Washington University
+  city: Washington, DC
+- year: 2009
+  degree: M.E.
+  thesis: A Study of Self-Similar Network Traffic Model
+  subject: Computer Science
+  institute: Beihang University
+  city: Beijing, China
+- year: 2005
+  degree: B.E.
+  subject: Computer Science
+  institute: China University of Mining and Technology
+  city: Xuzhou, China
+
+honor:
+- year: 2016
+  party: Neural Information Processing Systems (NIPS)
+  title: Travel Award
+  city: Barcelona, Spain
+- year: 2016
+  party: ICML Workshop on Computational Biology
+  title: Travel Award 
+  city: New York, NY
+- year: 2002--2004
+  party: China University of Mining and Technology
+  title: Excellence Scholarships
+
+research:
+- title: Inferring low-dimensional network dynamics with variational latent Gaussian process
+  pi: Park, Il Memming
+  fund: SUNY
+  goal: This research is to understand the neural computations implemented in populations of neurons by deducing the latent dynamics from neural time series. 
+  responsibility: Y. Zhao proposed a probabilistic generative model and developed a practical and efficient inference method, variational latent Gaussian process (vLGP), for recovering the low-dimensional hidden trajectories from neural recordings of primary visual cortex (V1) while the monkeys watch motion stimuli. This method can predict omitted spike trains, and capture both the toroidal topology of visual stimuli space, and the noise-correlation.
+- title: Interpretable nonlinear dynamical model of neural trajectories
+  pi: Park, Il Memming
+  fund: SUNY
+  goal: The goal is to interpret and visualize dynamics of neural trajectories by assuming low-dimensional continuous dynamics in a finite volume, and help understanding how neural system implements computation through its dynamics. 
+  responsibility: Y. Zhao developed a nonlinear time series model of neural trajectories to recover qualitative features of the phase portrait such as attractors, slow points, and bifurcation, while also producing reliable long-term future predictions in a variety of dynamical models and in real neural data.
+- title: Traumatic brain injury and bipolar psychosis in the Genomic Psychiatry Cohort
+  pi: Malaspina, Dolores 
+  fund: NIH
+  goal: This research is to assess the potential role of TBI in predicting illness features within a population with established psychiatric diagnoses, with the possibility that a shared genetic vulnerability and a propensity for TBI may represent a gene-environment interaction, including increased propensity for posttraumatic symptoms, and, through genetic studies, reveal patterns with important implications for prevention, diagnosis, and prognosis of mental illness. 
+  responsibility: Y. Zhao conducted clustering algorithm to probe differences between schizophrenia and bipolar disorder associated with variables of interest, and developed a method of choosing optimal number of clusters through contingency table of labeled clusters.
+- title: Uncovering an image-based biomarker of depression
+  pi: DeLorenzo, Christine 
+  fund: SUNY
+  goal: This research is to understand the underlying pattern of biology for diseases such as depression will allow us to effectively diagnose patients as well as provide targeted treatments. This is referred to as “precision medicine” and it revolutionized fields such as cancer therapy. The goal is to fundamentally change our understanding of major depression disorder (MDD), by uncovering a pattern of the disease from multimodal brain imaging, and bring precision medicine to MDD, through the discovery of a novel biomarker. 
+  responsibility: Y. Zhao conducted statistical analysis using neuroimaging at baseline and one week into antidepressant use to determine if baseline and one-week imaging measures can be combined to track antidepressant response, and reducing high dimensional brain imaging data to its most meaningful components.
+
+# Settings
+mainfont: Hoefler Text
+fontsize: 11pt
+lang: English
+geometry: letterpaper, left=35mm, right=35mm, top=51mm, bottom=17mm
+---

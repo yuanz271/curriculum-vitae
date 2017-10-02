@@ -1,0 +1,13 @@
+version: 2
+jobs:
+   build:
+     docker:
+       - image: yuanz271/texlive
+     steps:
+       - checkout
+       - run: sh build.sh
+       - run: |
+           mkdir output
+           cp *.pdf output/
+       - store_artifacts:
+           path: output
