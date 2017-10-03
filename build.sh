@@ -3,7 +3,7 @@ for f in templates/*.tex; do
 done
 latexmk -xelatex
 latexmk -c
-# rm *.tex
+rm *.tex
 rm *.bbl
 rm *.run.xml
 rm *.xdv

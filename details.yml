@@ -120,7 +120,7 @@ research:
 
 # Settings
 mainfont: Hoefler Text
-fontsize: 10pt
+fontsize: 11pt
 lang: English
 geometry: letterpaper #, left=35mm, right=35mm, top=51mm, bottom=17mm
 ---

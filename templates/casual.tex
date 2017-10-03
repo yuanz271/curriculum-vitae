@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
 \usepackage[T1]{fontenc}
+\usepackage{fontspec}
 \usepackage{fontawesome}
 \usepackage{textcomp}
 \usepackage{tgpagella}
@@ -75,13 +76,13 @@ $endfor$
 
 $for(phone)$
 $if(phone.home)$
-\faMobile & & $phone.home$ \\
+\faPhone & & $phone.home$ \\
 $endif$
 $endfor$
 
 $for(email)$
 $if(email.home)$
-\faAt & & \href{mailto:$email.home$}{$email.home$} \\
+\faEnvelope & & \href{mailto:$email.home$}{$email.home$} \\
 $endif$
 $endfor$
 
