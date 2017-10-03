@@ -3,4 +3,4 @@ for f in templates/*.tex; do
 done
 latexmk -xelatex
 latexmk -c
-rm *.tex *.bbl *.run.xml *.xdv
+# rm *.tex *.bbl *.run.xml *.xdv
