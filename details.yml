@@ -118,9 +118,4 @@ research:
   goal: This research is to understand the underlying pattern of biology for diseases such as depression will allow us to effectively diagnose patients as well as provide targeted treatments. This is referred to as “precision medicine” and it revolutionized fields such as cancer therapy. The goal is to fundamentally change our understanding of major depression disorder (MDD), by uncovering a pattern of the disease from multimodal brain imaging, and bring precision medicine to MDD, through the discovery of a novel biomarker. 
   responsibility: Y. Zhao conducted statistical analysis using neuroimaging at baseline and one week into antidepressant use to determine if baseline and one-week imaging measures can be combined to track antidepressant response, and reducing high dimensional brain imaging data to its most meaningful components.
 
-# Settings
-mainfont: Hoefler Text
-fontsize: 11pt
-lang: English
-geometry: letterpaper #, left=35mm, right=35mm, top=51mm, bottom=17mm
 ---
