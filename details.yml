@@ -69,7 +69,7 @@ education:
 - year: 2012
   degree: M.S.
   subject: Statistics
-  institute: George Washington University
+  institute: The George Washington University
   city: Washington, DC
 - year: 2009
   degree: M.E.
@@ -120,7 +120,7 @@ research:
 
 # Settings
 mainfont: Hoefler Text
-fontsize: 11pt
+fontsize: 10pt
 lang: English
-geometry: letterpaper, left=35mm, right=35mm, top=51mm, bottom=17mm
+geometry: letterpaper #, left=35mm, right=35mm, top=51mm, bottom=17mm
 ---

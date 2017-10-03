@@ -1,5 +1,5 @@
-\documentclass[12pt, letterpaper]{scrartcl}
-\usepackage[letterpaper, margin=0.75in]{geometry}
+\documentclass[$fontsize$]{article}
+\usepackage[$geometry$]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
 \usepackage[T1]{fontenc}
@@ -50,7 +50,8 @@
 	#2 \\
 \end{tabular*}}
 
-\addtokomafont{sectioning}{\rmfamily}
+% \addtokomafont{sectioning}{\rmfamily}
+\setmainfont{$mainfont$}
 \setlength\parindent{0pt}
 
 % and the actual content starts here
@@ -147,6 +148,7 @@ $endfor$
     $endfor$
 \end{itemize}
 
+\newpage
 \subsection*{\textsc{Publication}}
 \doublespacing
 \nocite{*}
