@@ -7,7 +7,7 @@ jobs:
        - checkout
        - run: sh build.sh
        - run: |
-           mkdir output
-           cp *.pdf output/
+           mkdir artifacts
+           cp *.pdf artifacts/
        - store_artifacts:
-           path: output
+           path: artifacts
