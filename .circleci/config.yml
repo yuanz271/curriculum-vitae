@@ -6,4 +6,4 @@ jobs:
      steps:
        - checkout
        - run: sh build.sh
-       - run: sh upload.sh casual.pdf
+       - run: sh upload.sh
