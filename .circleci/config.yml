@@ -6,5 +6,4 @@ jobs:
      steps:
        - checkout
        - run: sh build.sh
-       - store_artifacts:
-           path: "*.pdf"
+       - run: sh upload.sh casual.pdf
