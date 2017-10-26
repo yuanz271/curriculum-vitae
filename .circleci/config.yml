@@ -6,8 +6,5 @@ jobs:
      steps:
        - checkout
        - run: sh build.sh
-       - run: |
-           mkdir artifacts
-           cp *.pdf artifacts/
        - store_artifacts:
-           path: artifacts
+           path: "*.pdf"
