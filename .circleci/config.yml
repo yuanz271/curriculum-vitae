@@ -6,4 +6,5 @@ jobs:
     steps:
       - checkout
       - run: sh build.sh
-      - deploy: sh upload.sh
+      - deploy: 
+          command: sh upload.sh
