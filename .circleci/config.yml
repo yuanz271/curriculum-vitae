@@ -6,17 +6,4 @@ jobs:
     steps:
       - checkout
       - run: sh build.sh
-  deploy:
-    docker:
-      - image: circleci/node
-    steps:
-      - checkout
-      - run: sh upload.sh
-workflows:
-  version: 2
-  build_and_deploy:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
+      - deploy: sh upload.sh
