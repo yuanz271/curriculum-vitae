@@ -30,8 +30,13 @@ link:
 
 intro: "Who am I?"
 
-skills:
-- Sleeeeep
+toolbox:
+- Python
+- TensorFlow
+- Docker
+- Linux
+- NumPy
+- SciPy
 
 experience:
 - years: 2017--\phantom{2017}
