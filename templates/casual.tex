@@ -128,6 +128,22 @@ $endfor$
 	$endfor$
 \end{itemize}
 
+\subsection*{\textsc{Education}}
+\begin{itemize}
+    \parskip=0.1em
+    
+    $for(education)$
+    \item 
+    \headerrow
+    {\textbf{$education.institute$}}
+    {\textbf{$education.city$}}
+    \\
+    \headerrow
+    {\emph{$education.degree$, $education.subject$}}
+    {\emph{$education.year$}}
+    $endfor$
+\end{itemize}
+
 \subsection*{\textsc{Honors}}
 \begin{itemize}
     \parskip=0.1em
