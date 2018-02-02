@@ -103,24 +103,14 @@ $endfor$
 %	
 %	\item Machine Learning, Statistics, Computational Neuroscience
 %\end{itemize}
-
-
-\subsection*{\textsc{Education}}
+\subsection*{\textsc{Toolbox}}
 \begin{itemize}
-	\parskip=0.1em
-    
-    $for(education)$
-	\item 
-	\headerrow
-		{\textbf{$education.institute$}}
-		{\textbf{$education.city$}}
-	\\
-	\headerrow
-		{\emph{$education.degree$, $education.subject$}}
-		{\emph{$education.year$}}
-	$endfor$
+    \parskip=0.1em
+    \item
+    $for(toolbox)$
+        $toolbox$ \quad
+    $endfor$
 \end{itemize}
-
 
 \subsection*{\textsc{Experience}}
 \begin{itemize}
