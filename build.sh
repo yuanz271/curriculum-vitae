@@ -1,5 +1,5 @@
 for f in templates/*.tex; do
-    pandoc details.yml -o $(basename $f) --template=$f --latex-engine=xelatex
+    pandoc details.yml -o $(basename $f) --template=$f --pdf-engine=xelatex
 done
 latexmk -xelatex
 latexmk -c
