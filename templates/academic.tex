@@ -8,9 +8,15 @@
 \usepackage{tgpagella}
 \usepackage{hyperref}
 \usepackage{setspace}
-\usepackage[backend=biber, style=authoryear, sorting=none, doi=true, isbn=false, url=false, dashed=false, maxbibnames=5]{biblatex}
-\DeclareNameAlias{sortname}{last-first}
-\addbibresource{resource/publication.bib}
+%\usepackage[backend=biber, style=authoryear, sorting=none, doi=true, isbn=false, url=false, dashed=false, maxbibnames=5]{biblatex}
+%\DeclareNameAlias{sortname}{last-first}
+%\addbibresource{resource/publication.bib}
+%\usepackage{natbib}
+\makeatletter
+\def\@biblabel#1{}
+\makeatother
+\renewcommand\refname{Publication}
+
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 
@@ -131,9 +137,11 @@ $endfor$
 \end{itemize}
 
 \newpage
-\subsection*{\textsc{Publication}}
-\doublespacing
+%\subsection*{\textsc{Publication}}
+\onehalfspacing
+\bibliography{resource/publication.bib}
 \nocite{*}
-\printbibliography[heading=none]
+\bibliographystyle{unsrt}
+%\printbibliography[heading=none]
 
 \end{document}
