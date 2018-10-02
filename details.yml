@@ -39,11 +39,11 @@ toolbox:
 - SciPy
 
 experience:
-- years: 2016--\phantom{2018}
-#   employer: The Research Foundation for The State University of New York
-#   position: Postdoctoral Associate 
-#   city: Stony Brook, NY
-# - years: 2016--2017
+- years: 2017--\phantom{2018}
+  employer: The Research Foundation for The State University of New York
+  position: Postdoctoral Associate 
+  city: Stony Brook, NY
+- years: 2016--2017
   employer: Stony Brook University
   position: Postdoctoral Associate 
   city: Stony Brook, NY
