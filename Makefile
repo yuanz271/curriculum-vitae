@@ -1,18 +1,15 @@
 # make anticipates a tab not whitespaces indention
-PANDOC=pandoc
-LATEX=latexmk
+PANDOCFLAGS=--pdf-engine=latexmk
 LATEXFLAGS=-xelatex
-TEMPDIR=templates
+TMPLDIR=templates
 
 all: academic casual
 
 academic: 
-	$(PANDOC) details.yml -o academic.tex --template=$(TEMPDIR)/academic.tex --pdf-engine=xelatex
-	$(LATEX) $(LATEXFLAGS) academic.tex
+	pandoc details.yml $(PANDOCFLAGS) --pdf-engine-opt=$(LATEXFLAGS) -o academic.pdf --template=$(TMPLDIR)/academic.tex
 
 casual: 
-	$(PANDOC) details.yml -o casual.tex --template=$(TEMPDIR)/casual.tex --pdf-engine=xelatex
-	$(LATEX) $(LATEXFLAGS) casual.tex
+	pandoc details.yml $(PANDOCFLAGS) --pdf-engine-opt=$(LATEXFLAGS) -o casual.pdf --template=$(TMPLDIR)/casual.tex
 
 clean: 
-	$(LATEX) -c
+	latexmk -C
