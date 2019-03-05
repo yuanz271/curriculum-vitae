@@ -8,10 +8,16 @@
 \usepackage{tgpagella}
 \usepackage{hyperref}
 \usepackage{setspace}
+
+%% Bibliography
 %\usepackage[backend=biber, style=authoryear, sorting=none, doi=true, isbn=false, url=false, dashed=false, maxbibnames=5]{biblatex}
 %\DeclareNameAlias{sortname}{last-first}
 %\addbibresource{resource/publication.bib}
 %\usepackage{natbib}
+\usepackage[backend=bibtex, style=authoryear, sorting=ydnt]{biblatex}
+\bibliography{resource/publication.bib}
+%% END Bibliography
+
 \makeatletter
 \def\@biblabel#1{}
 \makeatother
@@ -124,7 +130,7 @@ $endfor$
 	$endfor$
 \end{itemize}
 
-\subsection*{\textsc{Honors}}
+\subsection*{\textsc{Honors and Awards}}
 \begin{itemize}
     \parskip=0.1em
     
@@ -139,9 +145,13 @@ $endfor$
 \newpage
 %\subsection*{\textsc{Publication}}
 \onehalfspacing
-\bibliography{resource/publication.bib}
+%\bibliography{resource/publication.bib}
 \nocite{*}
-\bibliographystyle{unsrt}
+%\bibliographystyle{unsrt}
 %\printbibliography[heading=none]
+\section*{Bibliography}
+\printbibliography[heading=subbibintoc, keyword=peer, title={Peer-reviewed}]
+\printbibliography[heading=subbibintoc, keyword=conference, title={Conference}]
+\printbibliography[heading=subbibintoc, keyword=preprint, title={Preprint}]
 
 \end{document}
