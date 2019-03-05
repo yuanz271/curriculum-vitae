@@ -5,6 +5,6 @@ jobs:
       - image: yuanz271/texlive
     steps:
       - checkout
-      - run: sh build.sh
+      - run: make
       - deploy: 
           command: sh upload.sh
