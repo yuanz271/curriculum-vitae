@@ -1,5 +1,5 @@
 # make anticipates a tab not whitespaces indention
-PANDOC=PANDOC
+PANDOC=pandoc
 LATEX=latexmk
 LATEXFLAGS=-xelatex
 TEMPDIR=templates
