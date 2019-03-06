@@ -39,17 +39,15 @@ toolbox:
 - SciPy
 
 experience:
-- years: 2017--\phantom{2018}
+- years: 2016--\phantom{2018}
   employer: The Research Foundation for The State University of New York
   position: Postdoctoral Associate 
-  city: Stony Brook, NY
-- years: 2016--2017
-  employer: Stony Brook University
-  position: Postdoctoral Associate 
+  responsibility: senory-perceptual coding, real-time filtering of population recording, lab manager
   city: Stony Brook, NY
 - years: 2015--2016
   employer: Stony Brook University
   position: Graduate Assistant 
+  responsibility: population analysis, single-trial dynamics, sensory coding
   city: Stony Brook, NY
 # - years: 2014--2015
 #   employer: Angion Biomedica Corp
@@ -58,11 +56,12 @@ experience:
 - years: 2012--2014
   employer: Stony Brook University
   position: Teaching Assistant 
+  responsibility: elements of statistics, probability and statistics for life sciences, time series, statistical computing 
   city: Stony Brook, NY
-- years: 2007--2008
-  employer: Beihang University
-  position: Teaching Assistant 
-  city: Beijing, China
+# - years: 2007--2008
+#   employer: Beihang University
+#   position: Teaching Assistant 
+#   city: Beijing, China
 
 education:
 - year: 2016
