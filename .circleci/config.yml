@@ -4,8 +4,11 @@ jobs:
     docker:
       - image: yuanz271/texlive
     steps:
-      - run: apt-get -y update && apt-get -y install git make curl
+      - run: apt-get -q -y update && apt-get -q -y install git make curl wget xzdec
+      - run: apt-get -q -y install fonts-ebgaramond fonts-font-awesome
+      # - run: mkdir -p /root/texmf
+      # - run: tlmgr init-usertree && tlmgr option repository ftp://tug.org/historic/systems/texlive/2017/tlnet-final && tlmgr install fontawesome
       - checkout
-      - run: make
+      - run: make academic
       - deploy: 
           command: sh upload.sh
