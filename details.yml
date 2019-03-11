@@ -42,6 +42,7 @@ experience:
 - years: 2016--\phantom{2018}
   employer: The Research Foundation for The State University of New York
   position: Postdoctoral Associate 
+  mentor: Il Memming Park
   responsibility: senory-perceptual coding, real-time filtering of population recording, lab manager
   city: Stony Brook, NY
 - years: 2015--2016
@@ -67,6 +68,7 @@ education:
 - year: 2016
   degree: Ph.D.
   thesis: Log-linear Model Based Tree and Latent Variable Model for Count Data
+  advisor: Hongshik Ahn
   subject: Applied Mathematics and Statistics
   institute: Stony Brook University
   city: Stony Brook, NY
@@ -77,7 +79,8 @@ education:
   city: Washington, DC
 - year: 2009
   degree: M.E.
-  thesis: A Study of Self-Similar Network Traffic Model
+  # thesis: A Study of Self-Similar Network Traffic Model
+  # advisor: Qinghua Cao
   subject: Computer Science
   institute: Beihang University
   city: Beijing, China

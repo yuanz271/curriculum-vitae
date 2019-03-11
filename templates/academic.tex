@@ -101,7 +101,7 @@ $endfor$
 \begin{itemize}
 	\parskip=0.1em
     
-    $for(education)$
+  $for(education)$
 	\item 
 	\headerrow
 		{\textbf{$education.institute$}}
@@ -110,6 +110,16 @@ $endfor$
 	\headerrow
 		{\emph{$education.degree$, $education.subject$}}
 		{\emph{$education.year$}}
+	$if(education.thesis)$
+	\\
+	\headerrow
+	{
+	\quad {\small Thesis: $education.thesis$}
+	\\ 
+	\quad {\small Advisor: $education.advisor$}
+	}
+	{}
+	$endif$
 	$endfor$
 \end{itemize}
 
@@ -127,10 +137,12 @@ $endfor$
 	\headerrow
 	{\emph{$experience.position$}}
 	{\emph{$experience.years$}}
-	\\
-	\headerrow
-	{\quad $experience.responsibility$}
-	{}
+	$if(experience.mentor)$
+		\\
+		\headerrow
+		{\quad {\small Mentor: $experience.mentor$}}
+		{}
+	$endif$
 	$endfor$
 \end{itemize}
 
