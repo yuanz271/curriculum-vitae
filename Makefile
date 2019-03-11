@@ -2,14 +2,20 @@
 PANDOCFLAGS=--pdf-engine=latexmk
 LATEXFLAGS=-xelatex
 TMPLDIR=templates
+TMPLS:=$(wildcard $(TMPLDIR)/*.tex)
+OUTPUTS:=$(basename $(notdir $(TMPLS)))
 
-all: academic casual
+.PHONY: all
 
-academic: 
-	pandoc details.yml $(PANDOCFLAGS) --pdf-engine-opt=$(LATEXFLAGS) -o academic.pdf --template=$(TMPLDIR)/academic.tex
+all: $(OUTPUTS)
 
-casual: 
-	pandoc details.yml $(PANDOCFLAGS) --pdf-engine-opt=$(LATEXFLAGS) -o casual.pdf --template=$(TMPLDIR)/casual.tex
+%: $(TMPLDIR)/%.tex
+	pandoc details.yml $(PANDOCFLAGS) --pdf-engine-opt=$(LATEXFLAGS) -o $@.pdf --template=$<
 
-clean: 
-	latexmk -C
+# html:
+# 	pandoc details.yml --pdf-engine=xelatex -o academic.tex --template=$(TMPLDIR)/academic.tex
+# 	xelatex academic.tex
+# 	biber academic
+# 	xelatex academic.tex
+# 	xelatex academic.tex
+# 	pandoc --metadata pagetitle="CV" -t html5 -s academic.tex -o academic.html
