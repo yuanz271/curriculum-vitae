@@ -9,6 +9,6 @@ jobs:
       # - run: mkdir -p /root/texmf
       # - run: tlmgr init-usertree && tlmgr option repository ftp://tug.org/historic/systems/texlive/2017/tlnet-final && tlmgr install fontawesome
       - checkout
-      - run: make academic
+      - run: make
       - deploy: 
           command: sh upload.sh
