@@ -1,0 +1,335 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+%% Bibliography
+%\usepackage[backend=biber, style=authoryear, sorting=none, doi=true, isbn=false, url=false, dashed=false, maxbibnames=5]{biblatex}
+%\DeclareNameAlias{sortname}{last-first}
+%\addbibresource{resource/publication.bib}
+%\usepackage{natbib}
+%\usepackage[backend=biber, style=numeric, sorting=ydnt, doi=false, isbn=false, url=false, dashed=false, maxbibnames=5]{biblatex}
+%\bibliography{../resource/publication.bib}
+%% END Bibliography
+
+%\makeatletter
+%\def\@biblabel#1{}
+%\makeatother
+%\renewcommand\refname{Publication}
+
+\pagestyle{plain}
+\setlength{\tabcolsep}{0em}
+
+\hypersetup
+{
+  pdfauthor={Yuan Zhao},
+  pdfsubject={Yuan Zhao's CV},
+  pdftitle={Yuan Zhao's CV},
+  colorlinks, breaklinks, bookmarks,
+  filecolor=black,
+  urlcolor=black,
+  linkcolor=black,
+  citecolor=black
+}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+%\addtokomafont{sectioning}{\rmfamily}
+\setmainfont{EB Garamond}
+\setlength\parindent{0pt}
+
+% and the actual content starts here
+\begin{document}
+
+{\noindent\Large\textbf{Curriculum Vitae}}\\
+\hrule
+
+%\subsection*{\textsc{Contact}}
+\subsection*{}
+%Department of Applied Mathematics and Statistics\\
+{\noindent\large\textbf{Yuan Zhao}}\\
+Department of Neurobiology and Behavior\\
+Stony Brook University\\
+Stony Brook, NY 11794\\
+% (631) 561-3689\\
+Phone: +1 (631) 561-3689 \\
+\href{mailto:yuan.zhao@stonybrook.edu}{yuan.zhao@stonybrook.edu} \\
+\href{http://catniplab.github.io}{http://catniplab.github.io}
+
+\subsection*{\textsc{Areas of Interest}}
+\begin{itemize}
+	\parskip=0.1em
+    
+    \item Computational neuroscience: information processing in the brain.
+    \item Neural code, computation, dynamics and noise.
+    \item Statistical and information theoretic methods for neural signal analysis.
+    \item Machine learning and time series modeling.
+\end{itemize}
+
+
+\subsection*{\textsc{Positions}}
+\begin{itemize}
+    \parskip=0.1em
+    
+    \item
+    \headerrow
+    {\textbf{Postdoctoral Associate}}
+    {{Aug 2016--current}}
+    \\
+    \headerrow
+    {\emph{The Research Foundation for The State University of New York /} \\
+     \emph{Stony Brook University}}
+    {\emph{Stony Brook, NY}}
+    \\
+    \headerrow
+    {\quad {\small Mentor: Dr. Il Memming Park} \\
+    \quad {\small Computational neuroscience, Perceptual-decision making, Online learning}}
+    {}
+    \item
+    \headerrow
+    {\textbf{Research Assistant}}
+    {{Aug 2015-- Aug 2016}}
+    \\
+    \headerrow
+    {\emph{Stony Brook University}}
+    {\emph{Stony Brook, NY}}
+    \\
+    \headerrow
+    {\quad {\small Computational neuroscience, Sensory coding, Brain state inference}}
+    {}
+    \item
+    \headerrow
+    {\textbf{Teaching Assistant}}
+    {{Aug 2012-- May 2014}}
+    \\
+    \headerrow
+    {\emph{Stony Brook University}}
+    {\emph{Stony Brook, NY}}
+    \\
+    \headerrow
+    {\quad {\small AMS 102 Elements of Statistics} \\
+     \quad {\small AMS 316 Introduction to Time Series Analysis} \\
+     \quad {\small AMS 597 Statistical Computing}
+    }
+    {}
+    \item
+    \headerrow
+    {\textbf{Teaching Assistant}}
+    {{2007 -- 2008}}
+    \\
+    \headerrow
+    {\emph{Beihang University}}
+    {\emph{Beijing, China}}
+    \\
+    \headerrow
+    {\quad {\small Computer networks}}
+    {}
+\end{itemize}
+
+
+\subsection*{\textsc{Education}}
+\begin{itemize}
+	\parskip=0.1em
+    
+  	\item 
+	\headerrow
+		{\textbf{Stony Brook University}}
+		{\textbf{Stony Brook, NY}}
+	\\
+	\headerrow
+		{\emph{Ph.D., Applied Mathematics and Statistics}}
+		{\emph{2016}}
+		\\
+	\headerrow
+	{
+	\quad {\small Thesis: Log-linear Model Based Tree and Latent Variable Model for Count Data}
+	\\ 
+	\quad {\small Advisors: Dr. Hongshik Ahn and Dr. Il Memming Park}
+	}
+	{}
+	\item 
+	\headerrow
+		{\textbf{The George Washington University}}
+		{\textbf{Washington, DC}}
+	\\
+	\headerrow
+		{\emph{M.S., Statistics}}
+		{\emph{2012}}
+			\item 
+	\headerrow
+		{\textbf{Beihang University}}
+		{\textbf{Beijing, China}}
+	\\
+	\headerrow
+		{\emph{M.E., Computer Science}}
+		{\emph{2009}}
+    \\
+    \headerrow
+    {
+        \quad {\small Thesis: A Study on Network Traffic Models}
+        \\ 
+        \quad {\small Advisors: Dr. Qinghua Cao}
+    }
+    {}
+	\item 
+	\headerrow
+		{\textbf{China University of Mining and Technology}}
+		{\textbf{Xuzhou, China}}
+	\\
+	\headerrow
+		{\emph{B.E., Computer Science}}
+		{\emph{2005}}
+		\end{itemize}
+
+
+\subsection*{\textsc{Honors and Awards}}
+\begin{itemize}
+    \parskip=0.1em
+    
+        \item
+    \headerrow
+    {\textbf{Travel Award}. Neural Information Processing Systems (NeurIPS)}
+    {\emph{2016}}
+        \item
+    \headerrow
+    {\textbf{Travel Award}. Workshop on Computational Biology, ICML}
+    {\emph{2016}}
+        \item
+    \headerrow
+    {\textbf{Annual Excellence Scholarships}. China University of Mining and Technology}
+    {\emph{2002--2004}}
+\end{itemize}
+
+\nocite{*}
+
+\section*{Publications}
+%\singlespacing
+%\printbibliography[heading=subbibintoc, keyword=peer, title={Peer-reviewed Papers}, resetnumbers=true]
+%\printbibliography[heading=subbibintoc, keyword=conference, title={Peer-reviewed Conference Abstracts}, resetnumbers=true]
+% \printbibliography[heading=subbibintoc, keyword=preprint, title={Preprint}]
+\subsubsection*{In Preparation}
+\begin{enumerate}[label={[\arabic*]}]
+    \item Josue Nassar, Yuan Zhao, Ian D. Jordan, Sima Mofakham, Charles Mikell III and Il Memming Park. 
+    Escape-the-Maze: maximizing exploration in unknown environments. (submitted to Neural Information Processing Systems 2020)
+    \item Diego M. Arribas, Yuan Zhao and Il Memming Park. 
+    Rescuing neural spike train models from bad MLE. (submitted to Neural Information Processing Systems 2020)
+    \item Matthew Dowling, Yuan Zhao and Il Memming Park. 
+    Nonparametric autoregressive point process. (submitted to Neural Information Processing Systems 2020)
+    \item Yuan Zhao and Il Memming Park. 
+    Variational online learning of neural dynamics. (submitted to Frontiers In Computational Neuroscience)
+    \item Yuan Zhao, Josue Nassar, Ian Jordan, M\'onica Bugallo and Il Memming Park. 
+    Streaming Variational Monte Carlo. 
+    \item Logan Becker, Yuan Zhao and Il Memming Park. 
+    The linear-nonlinear Weibull model.
+\end{enumerate}
+
+\subsubsection*{Peer-reviewed Papers}
+\begin{enumerate}[label={[\arabic*]}]
+    \item Yuan Zhao, Jacob Yates, Alex Huk and Il Memming Park. Stimulus-choice (mis)alignment in primate MT cortex. PLOS Computational Biology, 2020.
+    \item R. P. Verma, S. Dasnadi, Yuan Zhao and H. H. Chen.
+    Complications associated with the current sequential pharmacological management of early postnatal hypotension in extremely premature infants 
+    Baylor University Medical Center Proceedings, 2019, 1-6 
+    \item J. Nassar, S. Linderman, Yuan Zhao, M. Bugallo and I. M. Park.
+    Learning structured neural dynamics from single trial population recording 
+    52nd Asilomar Conference on Signals, Systems and Computers, 2018 
+    \item K. Esfahany, I. Siergiej, Yuan Zhao and I. M. Park.
+    Organization of neural population code in mouse visual system 
+    eNeuro, Society for Neuroscience, 2018, ENEURO.0414-17.2018
+    \item H. Moon, Yuan Zhao, D. Pluta and H. Ahn.
+    Subgroup analysis based on prognostic and predictive gene signatures for adjuvant chemotherapy in early-stage non-small-cell lung cancer patients 
+    Journal of Biopharmaceutical Statistics, Informa UK Limited, 2017, 1-13 
+    \item R. P. Verma, S. Dasnadi, Yuan Zhao and H. H. Chen.
+    A comparative analysis of ante- and postnatal clinical characteristics of extremely premature neonates suffering from refractory and non-refractory hypotension: is early clinical differentiation possible? Early Human Development, Elsevier BV, 2017, 113, 49-54 
+    \item Yuan Zhao and Il Memming Park. Variational latent Gaussian process for recovering single-trial dynamics from population spike trains. Neural Computation, 29(5), May 2017.
+    \item C. Vacchi-Suzzi, C. A. Porucznik, K. J. Cox, Yuan Zhao, H. Ahn, J. M. Harrington, K. E. Levine, B. Demple, C. J. Marsit, A. Gonzalez, B. Luft and J. R. Meliker.
+    Temporal variability of urinary cadmium in spot urine samples and first morning voids 
+    Journal of Exposure Science and Environmental Epidemiology, Springer Nature, 2016, 27, 306-312 
+    \item R. P. Verma, Yuan Zhao, R. Niwas and C. Kaplan.
+    Isolated placental inflammation and vasculopathy: clinical implications in the extremely low birth weight infants 
+    Fetal and Pediatric Pathology, Informa UK Limited, 2016, 35, 299-306 
+    \item Yuan Zhao and Il Memming Park. Interpretable nonlinear dynamic modeling of neural trajectories. In Advances in Neural Information Processing Systems (NIPS), 2016.
+    \item K. Cieslak, M. Pato, P. Buckley, C. Pato, J. L. Sobell, H. Medeiros, Yuan Zhao, H. Ahn and D. Malaspina.
+    Traumatic brain injury and bipolar psychosis in the genomic psychiatry cohort American Journal of Medical Genetics Part B: Neuropsychiatric Genetics, Wiley-Blackwell, 2015, 171, 506-512 
+\end{enumerate}
+
+\subsubsection*{Conference Abstracts}
+\begin{enumerate}[label={[\arabic*]}]
+    \item Yuan Zhao, Josue Nassar and Il Memming Park. Real-time discovery of effective dynamics from streaming noisy neural observations. In Computational and Systems Neuroscience (COSYNE), 2020.
+    \item Josue Nassar, Scott Linderman, Yuan Zhao, M´onica Bugallo and Il Memming Park. Learning structured neural dynamics from single trial population recording. In 52nd Asilomar Conference on Signals, Systems and Computers, 2018.
+    \item Kathleen Esfahany, Isabel Siergiej, Yuan Zhao and Il Memming Park. Organization of neural population code in mouse visual system. In Computational and Systems Neuroscience (COSYNE), 2018.
+    \item Yuan Zhao and Il Memming Park. Accessing neural states in real time: recursive variational bayesian dual estimation. In Computational and Systems Neuroscience (COSYNE), 2018.
+    \item Yuan Zhao, Jacob Yates and Il Memming Park. Low-dimensional state-space trajectory of choice at the population level in area MT. In Computational and Systems Neuroscience (COSYNE), 2017.
+    \item Yuan Zhao and Il Memming Park. Gotta inferem all: dynamical features from neural trajectories. In Computational and Systems Neuroscience (COSYNE), 2017.
+    \item Yuan Zhao and Il Memming Park. Inferring low-dimensional network dynamics with variational latent Gaussian process. In Organization for Computational Neuroscience (CNS), 2016.
+    \item Yuan Zhao and Il Memming Park. Variational inference of latent Gaussian neural dynamics. In International Conference on Machine Learning (ICML) Workshop on Computational Biology, 2016.
+\end{enumerate}
+
+
+\section*{Workshops}
+\begin{itemize}
+    \item Summer Workshop on the Dynamic Brain, 2019. (accepted)
+    \item International Conference on Machine Learning (ICML) Workshop on Computational Biology, 2016.
+\end{itemize}
+
+\section*{Talks}
+\begin{itemize}
+    \item \headerrow{\textbf{Spotlight talk} Workshop on Computational Biology (ICML), 2016}{}
+\end{itemize}
+
+
+\section*{Professional Organizations}
+\begin{itemize}
+    \item American Statistical Association (2016--2017)
+\end{itemize}
+
+\section*{Service}
+\subsubsection*{Journal Reviewer}
+\begin{itemize}
+    \item Scientific Reports
+    \item IEEE Transactions on Signal Processing
+    \item Communications in Statistics – Theory and Methods
+    \item Communications in Statistics – Simulation and Computation
+\end{itemize}
+\subsubsection*{Conference Reviewer}
+\begin{itemize}
+    \item Neural Information Processing Systems (NeurIPS), 2019
+\end{itemize}
+
+
+%\subsubsection*{Under Review}
+%\begin{enumerate}[label={[\arabic*]}]
+%    \item Yuan Zhao, Josue Nassar, Ian Jordan, M\'onica Bugallo and Il Memming Park. Streaming Variational Monte Carlo. (submitted to NeurIPS 2019)
+%\end{enumerate}
+
+\vfill\hfill\textbf{Last modified}: \today 
+
+\end{document}
