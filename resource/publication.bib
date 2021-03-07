@@ -1,5 +1,80 @@
 % Encoding: UTF-8
 
+@InProceedings{Arribas2020a,
+  author    = {Diego M. Arribas and Yuan Zhao and Il Memming Park},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  title     = {Rescuing neural spike train models from bad {MLE}},
+  abstract      = "The standard approach to fitting an autoregressive spike
+                   train model is to maximize the likelihood for one-step
+                   prediction. This maximum likelihood estimation (MLE) often
+                   leads to models that perform poorly when generating samples
+                   recursively for more than one time step. Moreover, the
+                   generated spike trains can fail to capture important
+                   features of the data and even show diverging firing rates.
+                   To alleviate this, we propose to directly minimize the
+                   divergence between neural recorded and model generated spike
+                   trains using spike train kernels. We develop a method that
+                   stochastically optimizes the maximum mean discrepancy
+                   induced by the kernel. Experiments performed on both real
+                   and synthetic neural data validate the proposed approach,
+                   showing that it leads to well-behaving models. Using
+                   different combinations of spike train kernels, we show that
+                   we can control the trade-off between different features
+                   which is critical for dealing with model-mismatch.",
+  month         =  oct,
+  year          =  2020,
+  archivePrefix = "arXiv",
+  eprint        = "2010.12362",
+  primaryClass  = "stat.ML",
+  arxivid       = "2010.12362",
+  code		= {https://github.com/catniplab/mmd-glm},
+  url		= {https://papers.nips.cc/paper/2020/hash/186b690e29892f137b4c34cfa40a3a4d-Abstract.html},
+}
+
+@Article{Zhao2020a,
+  author         = {Yuan Zhao and Jacob L. Yates and Aaron Levi and Alex Huk and Il Memming Park},
+  journal        = {{PLOS} Computational Biology},
+  title          = {Stimulus-choice (mis)alignment in primate area {MT}},
+  year           = {2020},
+  month          = may,
+  _archiveprefix = {bioRxiv},
+  _pages         = {884189+},
+  _publisher     = {Cold Spring Harbor Labs Journals},
+  abstract       = {For stimuli near perceptual threshold, the trial-by-trial activity of single neurons in many sensory areas is correlated with the animal's perceptual report. This phenomenon has often been attributed to feedforward readout of the neural activity by the downstream decision-making circuits. The interpretation of choice-correlated activity is quite ambiguous, but its meaning can be better understood in the light of population-wide correlations among sensory neurons. Using a statistical nonlinear dimensionality reduction technique on single-trial ensemble recordings from the middle temporal area during perceptual-decision-making, we extracted low-dimensional neural trajectories that captured the population-wide fluctuations. We dissected the particular contributions of sensory-driven versus choice-correlated activity in the low-dimensional population code. We found that the neural trajectories strongly encoded the direction of the stimulus in single dimension with a temporal signature similar to that of single MT neurons. If the downstream circuit were optimally utilizing this information, choice-correlated signals should be aligned with this stimulus encoding dimension. Surprisingly, we found that a large component of the choice information resides in the subspace orthogonal to the stimulus representation inconsistent with the optimal readout view. This misaligned choice information allows the feedforward sensory information to coexist with the decision-making process. The time course of these signals suggest that this misaligned contribution likely is feedback from the downstream areas. We hypothesize that this non-corrupting choice-correlated feedback might be related to learning or reinforcing sensory-motor relations in the sensory population.},
+  data           = {https://doi.org/10.6084/m9.figshare.11413182.v1},
+  doi            = {10.1371/journal.pcbi.1007614},
+  url            = {https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007614},
+}
+
+@Article{Zhao2020b,
+  title         = {Variational online learning of neural dynamics},
+  author        = "Zhao, Yuan and Park, Il Memming",
+  abstract      = "State space models provide an interpretable framework for
+                   complex time series by combining an intuitive dynamical
+                   system model with a probabilistic observation model. We
+                   developed a flexible online learning framework for latent
+                   nonlinear state dynamics and filtered latent states. Our
+                   method utilizes the stochastic gradient variational Bayes
+                   method to jointly optimize the parameters of the nonlinear
+                   dynamics, observation model, and the black-box recognition
+                   model. Unlike previous approaches, our framework can
+                   incorporate non-trivial observation noise models and has
+                   potential of inferring in real-time. We test our method on
+                   point process and Gaussian observations driven by continuous
+                   attractor dynamics and nonstationary systems, demonstrating
+                   its ability to recover the phase portrait, filtered
+                   trajectory, and produce long-term predictions for online
+                   machine learning.",
+  year          =  2020,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "1707.09049",
+  doi		= {10.3389/fncom.2020.00071},
+  journal       = {Frontiers in Computational Neuroscience},
+  code          = {https://github.com/catniplab/vjf.git}
+}
+
+
 @article{Verma2019,
 	title = {Complications associated with the current sequential pharmacological management of early postnatal hypotension in extremely premature infants},
 	rights = {All rights reserved},
@@ -50,17 +125,6 @@
   booktitle = {Computational and {Systems} {Neuroscience} ({COSYNE})},
   year      = {2018},
   keywords  = {conference},
-}
-
-@Unpublished{Zhao2017a,
-  author   = {Zhao, Yuan and Park, Il Memming},
-  title    = {Variational joint filtering},
-  note     = {{arXiv}: 1707.09049},
-  year     = {2017},
-  abstract = {State space models provide an interpretable framework for complex time series by combining an intuitive dynamical system model with a probabilistic observation model. We developed a flexible online learning framework for latent nonlinear state dynamics and filtered latent states. Our method utilizes the stochastic gradient variational Bayes method to jointly optimize the parameters of the nonlinear dynamics, observation model, and the black-box recognition model. Unlike previous approaches, our framework can incorporate non-trivial observation noise models and has potential of inferring in real-time. We test our method on point process and Gaussian observations driven by continuous attractor dynamics and nonstationary systems, demonstrating its ability to recover the phase portrait, filtered trajectory, and produce long-term predictions for online machine learning.},
-  journal  = {arXiv:1707.09049 [stat]},
-  keywords = {preprint},
-  url      = {http://arxiv.org/abs/1707.09049},
 }
 
 @Article{Moon2017,
