@@ -9,9 +9,10 @@ on:
 
 jobs:
   deployment:
-    runs-on: yuanz271/texlive
+    runs-on: ubuntu-latest
     environment: production
     steps:
-      - run: apt-get -q -y update && apt-get -q -y install git make curl wget xzdec
-      - run: apt-get -q -y install fonts-ebgaramond fonts-font-awesome
+      - run: apt-get -q -y update
+      - run: apt-get -q -y install texlive-xetex texlive-fonts-extra biber latexmk wget git make curl xzdec fonts-ebgaramond fonts-font-awesome
+      - run: apt-get -q -y clean
       - run: make
