@@ -12,7 +12,6 @@ jobs:
     runs-on: yuanz271/texlive
     environment: production
     steps:
-      - name: deploy
       - run: apt-get -q -y update && apt-get -q -y install git make curl wget xzdec
       - run: apt-get -q -y install fonts-ebgaramond fonts-font-awesome
       - run: make
