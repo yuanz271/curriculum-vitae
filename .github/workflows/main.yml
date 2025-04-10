@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - run: apt-get -q -y update
-      - run: apt-get -q -y install texlive-xetex texlive-fonts-extra biber latexmk wget git make curl xzdec fonts-ebgaramond fonts-font-awesome
-      - run: apt-get -q -y clean
+      - run: sudo apt-get -q -y update
+      - run: sudo apt-get -q -y install texlive-xetex texlive-fonts-extra biber latexmk wget git make curl xzdec fonts-ebgaramond fonts-font-awesome
+      - run: sudo apt-get -q -y clean
       - run: make
