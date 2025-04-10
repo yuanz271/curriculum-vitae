@@ -15,4 +15,5 @@ jobs:
       - run: sudo apt-get -q -y update
       - run: sudo apt-get -q -y install texlive-xetex texlive-fonts-extra biber latexmk wget git make curl xzdec fonts-ebgaramond fonts-font-awesome
       - run: sudo apt-get -q -y clean
+      - uses: actions/checkout@v4
       - run: make
