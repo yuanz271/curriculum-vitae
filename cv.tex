@@ -1,0 +1,320 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, left=1in, right=1.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+% \usepackage{cascadia-code}
+\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+
+\pagestyle{plain}
+\setlength{\tabcolsep}{0em}
+
+\hypersetup
+{
+  pdfauthor={Yuan Zhao},
+  pdfsubject={Yuan Zhao's Resume},
+  pdftitle={Yuan Zhao's Resume},
+  colorlinks, breaklinks, bookmarks,
+  filecolor=black,
+  urlcolor=black,
+  linkcolor=black,
+  citecolor=black
+}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+%\addtokomafont{sectioning}{\rmfamily}
+%\setmainfont{EB Garamond}
+%\setmainfont{Cascadia Code}
+%\fontspec[Mapping=tex-text]{EB Garamond}
+\setlength\parindent{0pt}
+
+% and the actual content starts here
+\begin{document}
+
+{\noindent\Large\textbf{Yuan Zhao}}\\
+\hrule
+
+%\subsection*{\textsc{Contact}}
+\subsection*{}
+Research Scientist \\
+Machine Learning Core \\
+National Institute of Mental Health (NIMH) \\
+%Guidehouse \\
+%Bethesda, Maryland, U.S. \\
+% (631) 561-3689\\
+%Phone: +1 (631) 561-3689 \\
+Email: \href{mailto:yuan.zhao@nih.gov}{yuan.zhao@nih.gov} \\
+%GitHub: \href{https://github.com/yuanz271}{github.com/yuanz271} \\
+%Google Scholar: \href{https://scholar.google.com/citations?user=c6bCVMUAAAAJ}{scholar.google.com/citations?user=c6bCVMUAAAAJ} \\
+%Toolset: Python, JAX, CUDA, Latex, PyTorch, R, Matlab
+
+
+%\subsection*{\textsc{Areas of Interest}}
+%\begin{itemize}
+%	\parskip=0.1em
+%    \item Computational neuroscience and machine learning.
+%    \item Neural code, computation, dynamics and noise.
+%    \item Latent variable models, state-space modeling, dynamical systems.
+%\end{itemize}
+
+
+\subsection*{\textsc{Experience}}
+\begin{itemize}
+    \parskip=0.1em
+    \item
+    \headerrow
+    {\textbf{Research Scientist}}
+    {{Aug 2021--present}}
+    \headerrow
+    {\emph{Machine Learning Core, NIMH}} 
+    {\emph{Bethesda, MD}}
+%    \\
+%    \headerrow
+%    {\quad {\small Director: Dr. Francisco Pereira} \\ 
+%     \qquad {\small support researchers in NIMH intramural research program}\\
+%     \qquad {\small develop statistics and machine learning methods for neuroscience}
+%    }
+    {}
+    \item
+    \headerrow
+    {\textbf{Postdoctoral Associate}}
+    {{Aug 2016--Aug 2021}}
+    \\
+    \headerrow
+    {\emph{The Research Foundation for SUNY}}
+%    {\emph{Stony Brook University}}
+    {\emph{Stony Brook, NY}}
+%    \\
+%    \headerrow
+%    {\quad {\small Mentor: Dr. Il Memming Park}\\
+%     \qquad {\small develop probabilistic methods for spatiotemporal neural time series}\\
+%     \qquad {\small develop real-time ML and control methods for next-generation experiments}
+%    }
+    {}
+%    \item
+%    \headerrow
+%    {\textbf{Research Assistant}}
+%    {{Aug 2015-- Aug 2016}}
+%    \\
+%    \headerrow
+%    {\emph{Stony Brook University}}
+%    {\emph{Stony Brook, NY}}
+%    \\
+%    \headerrow
+%    {\qquad {\small develop probabilistic methods to infer neural dynamics models}}
+%    {}
+\end{itemize}
+
+
+\subsection*{\textsc{Education}}
+\begin{itemize}
+	\parskip=0.1em
+    
+  	\item 
+	\headerrow
+		{\textbf{Stony Brook University}}
+		{\textbf{Stony Brook, NY}}
+	\\
+	\headerrow
+		{\emph{Ph.D., Applied Mathematics and Statistics}}
+		{\emph{2016}}
+		\\
+	\headerrow
+	{
+%	\quad {\small Thesis: Log-linear Model Based Tree and Latent Variable Model for Count Data}
+%	\\ 
+	\quad {\small Advisors: Dr. Hongshik Ahn and Dr. Il Memming Park}
+	}
+	{}
+	\item 
+	\headerrow
+		{\textbf{The George Washington University}}
+		{\textbf{Washington, DC}}
+	\\
+	\headerrow
+		{\emph{M.S., Statistics}}
+		{\emph{2012}}
+			\item 
+	\headerrow
+		{\textbf{Beihang University}}
+		{\textbf{Beijing, China}}
+	\\
+	\headerrow
+		{\emph{M.E., Computer Science}}
+		{\emph{2009}}
+    {}
+	\item 
+	\headerrow
+		{\textbf{China University of Mining and Technology}}
+		{\textbf{Xuzhou, China}}
+	\\
+	\headerrow
+		{\emph{B.E., Computer Science}}
+		{\emph{2005}}
+\end{itemize}
+
+
+\subsection*{\textsc{Selected Publications}}
+
+\subsubsection*{Under Review}
+\begin{enumerate}[label={[\arabic*]}]
+    \item Ido Maor, Ilana Ascher, Yuan Zhao, Yuji Takahashi, Evan Hart, Francisco Pereira, Geoffrey Schoenbaum. \textit{Persistent representation of a prior schema in the orbitofrontal cortex facilitates learning of a conflicting schema.}
+          Neuron.
+\end{enumerate}
+
+\subsubsection*{Papers\footnote{* Equal contribution}}
+\begin{enumerate}[label={[\arabic*]}]
+    \item Ana R. Inácio, Ka Chun Lam, Yuan Zhao, Francisco Pereira, Charles R. Gerfen, Soohyun Lee. 
+          \textit{Brain-wide presynaptic networks of functionally distinct cortical neurons.} 
+          Nature, 2025.
+    \item Matthew Dowling, Yuan Zhao, Il Memming Park.
+          \textit{eXponential FAmily Dynamical Systems (XFADS): Large-scale nonlinear Gaussian state-space modeling.}
+          Advances in Neural Information Processing Systems 37 (NeurIPS), 2024.
+    \item Vermani, A., Dowling, M., Jeon, H., Jordan, I., Nassar, J., Bernaerts, Y., Zhao, Y., Vaerenbergh, S.V. and Park, I.M. 
+          \textit{Real-time machine learning strategies for a new kind of neuroscience experiments.}
+          European Signal Processing Conference. Lyon, France, 2024.
+    \item Matthew Dowling, Yuan Zhao, Il Memming Park. 
+          \textit{Linear time GPs for inferring latent trajectories from neural spike trains.}
+          The Fortieth International Conference on Machine Learning (ICML), 2023.
+    \item Matthew Dowling, Yuan Zhao, Il Memming Park.
+          \textit{Real-time variational method for learning neural trajectory and its dynamics.}
+          The Eleventh International Conference on Learning Representations (ICLR), 2023. (top 25\%, spotlight)
+    \item Aaron J. Levi*, Yuan Zhao*, Il Memming Park, Alex C. Huk. 
+          \textit{Sensory and choice responses in MT distinct from motion encoding.}
+          Journal of Neuroscience, 2023. (featured)
+    \item Yuan Zhao*, Josue Nassar*, Ian Jordan and Il Memming Park.
+          \textit{Streaming Variational Monte Carlo.}
+          IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.
+    \item Diego M. Arribas, Yuan Zhao and Il Memming Park. 
+          \textit{Rescuing neural spike train models from bad MLE.}
+          Advances in Neural Information Processing Systems 33 pre-proceedings (NeurIPS), 2020.
+    \item Yuan Zhao and Il Memming Park. 
+          \textit{Variational online learning of neural dynamics.}
+          Frontiers In Computational Neuroscience, 2020.
+    \item Yuan Zhao, Jacob Yates, Aaron Levi, Alex Huk and Il Memming Park. 
+          \textit{Stimulus-choice (mis)alignment in primate MT cortex.}
+          PLOS Computational Biology, 2020.
+    \item J. Nassar, S. Linderman, Yuan Zhao, M. Bugallo and I. M. Park.
+          \textit{Learning structured neural dynamics from single trial population recording.}
+          52nd Asilomar Conference on Signals, Systems and Computers, 2018.
+    \item K. Esfahany, I. Siergiej, Yuan Zhao and I. M. Park.
+          \textit{Organization of neural population code in mouse visual system.}
+          eNeuro, Society for Neuroscience, 2018.
+    \item Yuan Zhao and Il Memming Park. 
+          \textit{Variational latent Gaussian process for recovering single-trial dynamics from population spike trains.}
+          Neural Computation, 29(5), May 2017.
+    \item Yuan Zhao and Il Memming Park. 
+          \textit{Interpretable nonlinear dynamic modeling of neural trajectories.} 
+          Advances in Neural Information Processing Systems 29 (NIPS), 2016.
+\end{enumerate}
+
+\subsubsection*{Conference Abstracts}
+\begin{enumerate}[label={[\arabic*]}]
+    \item Siyu Wang, Yuan Zhao, Ramon Bartolo, Francisco Pereira, Bruno Averbeck. \textit{Dynamical changes of attractor landscapes during reinforcement learning in macaque prefrontal
+cortex.}. Computational and Systems Neuroscience (COSYNE), 2024.
+    \item Yuan Zhao, Josue Nassar and Il Memming Park. \textit{Real-time discovery of effective dynamics from streaming noisy neural observations.} Computational and Systems Neuroscience (COSYNE), 2020.
+    \item Josue Nassar, Scott Linderman, Yuan Zhao, M´onica Bugallo and Il Memming Park. \textit{Learning structured neural dynamics from single trial population recording.} 52nd Asilomar Conference on Signals, Systems and Computers, 2018.
+    \item Kathleen Esfahany, Isabel Siergiej, Yuan Zhao and Il Memming Park. \textit{Organization of neural population code in mouse visual system.} Computational and Systems Neuroscience (COSYNE), 2018.
+    \item Yuan Zhao and Il Memming Park. \textit{Accessing neural states in real time: recursive variational bayesian dual estimation.} Computational and Systems Neuroscience (COSYNE), 2018.
+    \item Yuan Zhao, Jacob Yates and Il Memming Park. \textit{Low-dimensional state-space trajectory of choice at the population level in area MT.} Computational and Systems Neuroscience (COSYNE), 2017.
+    \item Yuan Zhao and Il Memming Park. \textit{Gotta inferem all: dynamical features from neural trajectories.} Computational and Systems Neuroscience (COSYNE), 2017.
+    \item Yuan Zhao and Il Memming Park. \textit{Inferring low-dimensional network dynamics with variational latent Gaussian process.} Organization for Computational Neuroscience (CNS), 2016.
+    \item Yuan Zhao and Il Memming Park. \textit{Variational inference of latent Gaussian neural dynamics.} 
+    International Conference on Machine Learning (ICML) Workshop on Computational Biology, 2016.
+\end{enumerate}
+
+
+\subsection*{\textsc{Reviewed Journals and Conferences}}
+\begin{itemize}
+    \item IEEE Transactions on Signal Processing
+    \item Neurons, Behavior, Data analysis, and Theory
+    \item Transactions on Machine Learning Research
+    \item Scientific Reports
+    \item Communications in Statistics – Theory and Methods
+    \item Communications in Statistics – Simulation and Computation
+    \item STAR Protocols, Cell Press
+    \\
+    \item Computational and Systems Neuroscience (Cosyne) 
+    \item Neural Information Processing Systems (NeurIPS) 
+    \item International Conference on Learning Representations (ICLR)
+    \item International Conference on Machine Learning (ICML)
+\end{itemize}
+
+\subsection*{\textsc{Talks}}
+\begin{itemize}
+    \item \headerrow{AMS Spring Eastern Sectional Meeting}{Washington DC, 2024} \\
+    \textit{Reverse-engineer the neural computation underlying population dynamics}
+    \item \headerrow{Neuromatch 3.0}{2020} \\
+    \textit{Noncorrupting decision-making feedback to area MT}
+    \item \headerrow{ICML Workshop on Computational Biology}{New York, 2016} \\
+    \textit{Variational inference of latent Gaussian neural dynamics} 
+\end{itemize}
+
+\subsection*{\textsc{Teaching}}
+\begin{itemize}
+    \item
+    \headerrow{NEU 501: \small Introduction to Neuroscience Research}{Stony Brook University, 2020}
+\end{itemize}
+
+%\subsection*{\textsc{Workshops}}
+%\begin{itemize}
+%    \item \headerrow{Summer Workshop on the Dynamic Brain}{Allen Institute, 2019}
+%    \item \headerrow{ICML Workshop on Computational Biology}{New York, 2016}
+%\end{itemize}
+
+%\subsection*{\textsc{Honors and Awards}}
+%\begin{itemize}
+%    \parskip=0.1em
+%        \item
+%    \headerrow
+%    {\textbf{Travel Award}. \small Neural Information Processing Systems (NIPS)}
+%    {\emph{2016}}
+%        \item
+%    \headerrow
+%    {\textbf{Travel Award}. \small Workshop on Computational Biology, ICML}
+%    {\emph{2016}}
+%%        \item
+%%    \headerrow
+%%    {\textbf{Excellence Scholarship}. \small China University of Mining and Technology}
+%%    {\emph{2002-04}}
+%\end{itemize}
+
+%\subsection*{\textsc{Professional Organizations}}
+%\begin{itemize}
+%    \item American Statistical Association
+%    \item Institute of Electrical and Electronics Engineers (IEEE)
+%\end{itemize}
+
+\vfill\hfill\textbf{Last modified}: \today 
+
+\end{document}
