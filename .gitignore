@@ -551,5 +551,5 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/latex,visualstudiocode,macos,linux,windows,tex
 
-#
-cv.pdf
+# Track cv.pdf for direct download from repo
+!cv.pdf
