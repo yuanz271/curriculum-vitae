@@ -1,13 +1,29 @@
 \documentclass[11pt]{article}
 \usepackage[letterpaper, left=1in, right=1.5in]{geometry}
-\usepackage[utf8]{inputenc}
 \usepackage{mdwlist}
-% \usepackage{cascadia-code}
-\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
-\usepackage[T1]{fontenc}
 \usepackage{fontspec}
 \usepackage{textcomp}
-\usepackage{tgpagella}
+
+% Fonts (using fontspec for XeTeX with OpenType files from TeX Live)
+\setmainfont{texgyrepagella}[
+  Extension = .otf,
+  UprightFont = *-regular,
+  BoldFont = *-bold,
+  ItalicFont = *-italic,
+  BoldItalicFont = *-bolditalic
+]
+\setsansfont{texgyreheros}[
+  Extension = .otf,
+  UprightFont = *-regular,
+  BoldFont = *-bold,
+  ItalicFont = *-italic,
+  BoldItalicFont = *-bolditalic
+]
+\setmonofont{lmmono10-regular.otf}[Scale=0.85]
+
+% Better line breaking and typography
+\usepackage{microtype}
+
 \usepackage{hyperref}
 \usepackage{setspace}
 \usepackage{enumitem}
@@ -21,7 +37,7 @@
   pdfauthor={Yuan Zhao},
   pdfsubject={Yuan Zhao's Resume},
   pdftitle={Yuan Zhao's Resume},
-  colorlinks, breaklinks, bookmarks,
+  colorlinks, breaklinks,
   filecolor=black,
   urlcolor=black,
   linkcolor=black,
