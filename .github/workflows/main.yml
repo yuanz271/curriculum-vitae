@@ -6,25 +6,23 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - name: Install TeX Live
-        run: |
-          sudo apt-get -q -y update
-          sudo apt-get -q -y install texlive-xetex texlive-fonts-extra latexmk
-          sudo apt-get -q -y clean
-
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build PDF
-        run: make
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          latexmk_use_xelatex: true
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
