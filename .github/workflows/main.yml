@@ -31,14 +31,12 @@ jobs:
           path: cv.pdf
           retention-days: 90
 
-      - name: Commit updated PDF
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet cv.pdf; then
-            echo "No changes to cv.pdf"
-          else
-            git add cv.pdf
-            git commit -m "chore: auto-update cv.pdf [skip ci]"
-            git push
-          fi
+      - name: Upload to release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest CV
+          files: cv.pdf
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
